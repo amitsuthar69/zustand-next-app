@@ -15,12 +15,14 @@ export default function Form({
         onSubmit={isEdit ? handleEdit : handleAdd}
         className="text-gray-900 flex flex-col gap-2">
         <input
+          className="form-inputs"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           type="text"
           placeholder="Title"
         />
         <textarea
+          className="form-inputs"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           type="text"

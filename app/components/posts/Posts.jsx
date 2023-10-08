@@ -57,7 +57,7 @@ export default function Posts() {
   };
 
   return (
-    <div className="flex flex-col gap-4 justify-center items-center h-screen">
+    <div className="flex flex-col gap-4 font-sans justify-center items-center h-screen">
       <h1 className="text-3xl text-center">Posts</h1>
       <Form
         isEdit={isEdit}
@@ -70,7 +70,7 @@ export default function Posts() {
       />
       {posts ? (
         posts.map((post) => (
-          <div className="border rounded-md p-2" key={post.id}>
+          <div className="border w-[240px] bg-[#141010b4] rounded-md p-2" key={post.id}>
             <h1 className="text-green-500">{post.title}</h1>
             <p>{post.description}</p>
             <div className="flex gap-2 justify-center items-center mt-4">
